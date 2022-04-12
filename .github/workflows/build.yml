@@ -30,10 +30,8 @@ jobs:
       run: echo "Hello ${{ github.event.inputs.name }}"
     - name: Commit files  # transfer the new html files back into the repository
       run: |
-        git config --local user.name  ${{ github.actor }}
         git clone https://github.com/Altify-Developing/Altify-Developing-Main
         git add 'main'
-        git commit -m "Update From ${{ github.actor }}"
     - name: Push changes  # push the output folder to your repo
       uses: ad-m/github-push-action@master
       with:
