@@ -22,11 +22,5 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      - name: Create Issue From File
-        uses: peter-evans/create-issue-from-file@v4
-        with:
-          title: An example issue
-          content-filepath: /example-content/output.md
-          labels: |
-            report
-            automated issue
+        - name: git Actions
+          uses: srt32/git-actions@v0.0.3
