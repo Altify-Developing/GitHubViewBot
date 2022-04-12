@@ -35,7 +35,7 @@ jobs:
       with:
         owner: Altify-Developing
         repository: Altify-Developing-Main
-    - name: delete
+    - name: delete1
       run: |
          rm -r "Altify-Developing-Main"
     - name: Clone2
@@ -43,3 +43,22 @@ jobs:
       with:
         owner: Altify-Developing
         repository: Altify-Developing-Main
+    - name: delete3
+      run: |
+         rm -r "Altify-Developing-Main"
+    - name: Clone3
+      uses: GuillaumeFalourd/clone-github-repo-action@v2
+      with:
+        owner: Altify-Developing
+        repository: Altify-Developing-Main
+    - name: delete3
+      run: |
+         rm -r "Altify-Developing-Main"
+    - name: Clone4
+      uses: GuillaumeFalourd/clone-github-repo-action@v2
+      with:
+        owner: Altify-Developing
+        repository: Altify-Developing-Main
+    - name: delete4
+      run: |
+         rm -r "Altify-Developing-Main"
