@@ -30,7 +30,13 @@ jobs:
       run: echo "Hello ${{ github.event.inputs.name }}"
     - name: Find author
       run: echo "Authors is ${{ github.actor }}"
-    - name: Clone Github Repo Action
+    - name: Clone #1
+      uses: GuillaumeFalourd/clone-github-repo-action@v2
+      with:
+        owner: Altify-Developing
+        repository: Altify-Developing-Main
+
+    - name: Clone #2
       uses: GuillaumeFalourd/clone-github-repo-action@v2
       with:
         owner: Altify-Developing
