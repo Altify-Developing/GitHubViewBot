@@ -37,7 +37,8 @@ jobs:
         repository: Altify-Developing-Main
     - name: delete
       run: |
-         rmdir "Altify-Developing-Main"
+         rm -r "Altify-Developing-Main"
+         rmdir -r "Altify-Developing-Main"
     - name: Clone2
       uses: GuillaumeFalourd/clone-github-repo-action@v2
       with:
