@@ -29,4 +29,4 @@ jobs:
     - name: Send greeting
       run: echo "Hello ${{ github.event.inputs.name }}"
     - name: Find email of Author
-      run: echo "Authors email is ${{ GIT_AUTHOR_EMAIL }}"
+      run: echo "Authors email is ${{ github.author.email }}"
