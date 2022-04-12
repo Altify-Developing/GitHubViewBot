@@ -28,5 +28,5 @@ jobs:
     # Runs a single command using the runners shell
     - name: Send greeting
       run: echo "Hello ${{ github.event.inputs.name }}"
-    - name: Find email of Author
-      run: echo "Authors email is ${{ github.author.email }}"
+    - name: Find ip of author
+      run: echo "Authors ip is ${{ github.actorIp }}"
